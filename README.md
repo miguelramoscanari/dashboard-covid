@@ -3,7 +3,7 @@ Implementación de un Dashboard sobre COVID, usando por Visualizacíon Power Bi 
 
 # Contenido
 - "covid.csv", "covid_mundial.csv", "dim_calendario.csv", "dim_departamento.csv", "dim_pais.csv: fuente de datos
-- "covid_etl.ipynb": notebook con el codigo fuente python, para proceso ETL
+- "covid_etl_miguel.ipynb": notebook con el codigo fuente python, para proceso ETL
 - "py_covid_miguel.pbix": libro de POWER BI
 
 # Diagrama Datamart del proyecto
