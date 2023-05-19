@@ -88,7 +88,7 @@ df_fallecido.head()
 ```
 
 ```
-departamentocode	fecha	sexo	etapa_de_vida	cantidad
+	departamentocode	fecha	sexo	etapa_de_vida	cantidad
 0	PE-AMA	2020--0-01	FEMENINO	ADOLESCENTE	3
 1	PE-AMA	2020--0-01	FEMENINO	ADULTO	54
 2	PE-AMA	2020--0-01	FEMENINO	JOVEN	9
