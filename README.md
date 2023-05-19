@@ -177,8 +177,7 @@ df_calendario['AñoMes'] = df_calendario.fecha.astype('string').str[:4] + df_cal
 ```
 # ETL Creando dimension departamento
 
-EN POWER BI, EN GRAFICO TIPO MAPAS, PARA QUE IDENTIFICA UN DEPARTAMENTO DE UN PAIS ES 
-NECESARIO CREAR UN CAMPO CON FORMATO >> DEPARTAMENTO (DEPARTAMENTO), (PAIS)
+En Power Bi, en un grafico tipo mapas para que localice el departamento de un pais, es necesario crear un campo con formato >> departamento (departamento), (pais)
 ```
 df_dep['departamentoPais'] = 'DEPARTAMENTO ' + df_dep['departamento'] + ', PERU'
 ```
