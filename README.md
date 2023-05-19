@@ -56,7 +56,7 @@ df_pos = df_posi.rename(str.lower, axis='columns')
 df_dep = df_dep.rename(str.lower, axis='columns')
 df_mun = df_mundo.rename(str.lower, axis='columns')
 ```
-#  ETL DE FALLECIDOS POR COVID
+#  ETL de fallecidos por covid
 ```
 # CAMBIANDO EL CAMPO FECHA A TIPO STRING, DARLE FORMATO AAAA-MM-01
 df_fal['fecha_fallecimiento'] = df_fal['fecha_fallecimiento'].astype('string').str[:8]
@@ -84,7 +84,7 @@ departamentocode	fecha	sexo	etapa_de_vida	cantidad
 4	PE-AMA	2020--0-01	FEMENINO	NIÑO	3
 ```
 
-# ETL DE POSITIVOS POR COVID
+# ETL de positivos por covid
 
 ```
 # CAMBIANDO EL CAMPO FECHA A TIPO STRING, DARLE FORMATO AAAA-MM-01
@@ -117,7 +117,7 @@ df_covid = df_positivo.merge(df_fallecido[['cantidad', 'departamentocode', 'fech
 df_covid = df_covid.rename(columns={'cantidad_x': 'positivo', 'cantidad_y': 'fallecido'})
 df_covid['fallecido'] = df_covid['fallecido'].fillna(0)
 ```
-# ETL MUNDIAL COVID
+# ETL mundial covid
 
 ```
 # CAMBIANDO EL CAMPO FECHA A TIPO STRING, FORMATO AAAA-MM-01
@@ -136,7 +136,7 @@ df_pais = df_mun.groupby(['paisCode', 'pais', 'continente'])['new_cases'].count(
 df_pais = df_pais[['paisCode', 'pais', 'continente']]
 ```
 
-# ETL CREANDO DIMENSION CALENDARIO
+# ETL Creando dimension calendario
 
 ```
 # HALLANDO FECHA MAXIMA
@@ -163,7 +163,7 @@ df_calendario['Mes'] = df_calendario.fecha.dt.month.map(lambda x: mes_dict[x])
 df_calendario['Dia'] = df_calendario.fecha.dt.day
 df_calendario['AñoMes'] = df_calendario.fecha.astype('string').str[:4] + df_calendario.fecha.astype('string').str[5:7]
 ```
-# ETL CREANDO DIMENSION DEPARTAMENTO
+# ETL Creando dimension departamento
 
 EN POWER BI, EN GRAFICO TIPO MAPAS, PARA QUE IDENTIFICA UN DEPARTAMENTO DE UN PAIS ES 
 NECESARIO CREAR UN CAMPO CON FORMATO >> DEPARTAMENTO (DEPARTAMENTO), (PAIS)
