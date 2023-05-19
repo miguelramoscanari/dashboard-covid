@@ -20,6 +20,18 @@ Se diseño dos datarmart:
 
 ![Image text](https://github.com/miguelramoscanari/dashboard-covid/blob/main/dashboard_mundo.png)
 
+# Origen de la fuente de datos del proyecto
+```
+Casos positivos por COVID-19 - [Ministerio de Salud - MINSA]
+https://www.datosabiertos.gob.pe/dataset/casos-positivos-por-covid-19-ministerio-de-salud-minsa
+
+Fallecidos por COVID-19 - [Ministerio de Salud - MINSA]
+https://www.datosabiertos.gob.pe/dataset/fallecidos-por-covid-19-ministerio-de-salud-minsa
+
+Data Mundial de covid
+https://github.com/owid/covid-19-data/tree/master/public/data
+```
+
 # Proceso ETL con Python
 
 Importando librerias, para importar csv que estan en Internet
