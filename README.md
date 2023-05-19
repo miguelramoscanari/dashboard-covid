@@ -15,10 +15,10 @@ Se diseño dos datarmart:
 
 # Dashboard en Power BI de covid del Perú y en el Mundo.
 
-![Image text](https://github.com/miguelramoscanari/dashboard-covid/blob/main/dashboard_peru.png)
+# ![Image text](https://github.com/miguelramoscanari/dashboard-covid/blob/main/dashboard_peru.png)
 
 
-![Image text](https://github.com/miguelramoscanari/dashboard-covid/blob/main/dashboard_mundo.png)
+# ![Image text](https://github.com/miguelramoscanari/dashboard-covid/blob/main/dashboard_mundo.png)
 
 # Origen de la fuente de datos del proyecto
 ```
