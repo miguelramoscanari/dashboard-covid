@@ -1,5 +1,5 @@
 # Dashboard Covid con Power BI y ETL con Python
-Implementación de un Dashboard sobre COVID, usando por Visualizacíon Power Bi y para ETL con Python.
+Implementación propia de un Dashboard sobre COVID, usando por Visualizacíon Power Bi y para ETL con Python.
 
 # Contenido
 - "covid.csv", "covid_mundial.csv", "dim_calendario.csv", "dim_departamento.csv", "dim_pais.csv: fuente de datos
